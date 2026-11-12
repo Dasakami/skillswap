@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.45 system-ui, sans-serif; color: #1c1f24; background: #f5f6f8; }
+header { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; padding: 10px 16px; background: #fff; border-bottom: 1px solid #dde0e5; }
+.logo { font-weight: 700; font-size: 1.2rem; text-decoration: none; color: #3b5bdb; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+main { max-width: 860px; margin: 0 auto; padding: 16px; }
+a { color: #3b5bdb; }
+.card { background: #fff; border: 1px solid #dde0e5; border-radius: 8px; padding: 12px 14px; margin: 10px 0; }
+.card h3 { margin: 0 0 4px; }
+.muted { color: #667; font-size: .9rem; margin: 4px 0; }
+.err { color: #c92a2a; font-size: .85rem; display: block; min-height: 0; }
+.ok { color: #2b8a3e; font-size: .9rem; }
+form { display: flex; flex-direction: column; gap: 8px; }
+form.filters, form.inline { flex-direction: row; flex-wrap: wrap; align-items: center; }
+input, select, textarea, button { font: inherit; padding: 7px 10px; border: 1px solid #c5cad3; border-radius: 6px; max-width: 100%; }
+textarea { min-height: 64px; }
+button { background: #3b5bdb; color: #fff; border-color: #3b5bdb; cursor: pointer; }
+button.sec { background: #fff; color: #3b5bdb; }
+button.danger { background: #c92a2a; border-color: #c92a2a; }
+button:disabled { opacity: .5; cursor: default; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tabs { display: flex; gap: 8px; margin-bottom: 8px; }
+.tag { display: inline-block; background: #e9ecef; border-radius: 10px; padding: 0 8px; font-size: .85rem; }
+.slot { border-top: 1px solid #eee; padding: 8px 0; }
+.chat { background: #f1f3f5; border-radius: 6px; padding: 8px; margin-top: 8px; }
+.msg { margin: 4px 0; }
+#toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: #222; color: #fff; padding: 8px 14px; border-radius: 6px; max-width: 90vw; }
+@media (max-width: 600px) { main { padding: 10px; } form.filters > * { flex: 1 1 100%; } }
